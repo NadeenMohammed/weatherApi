@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-10 text-center  ">
+          <div class="search-bar m-auto my-5">
+            <input type="text" id="search-bar" class="w-100 mb-5" placeholder=" Search City..."
+              style="font-family:Arial, FontAwesome" />
+          </div>
+        </div>
+
+     
+
+
+           <!-- -------------------------------  today --------------------- -->
+        <div class="col-md-12 col-lg-4 ">
+          <div class="content bg-gradient  shadow-lg  p-5 rounded-3">
+            <h2 class="text-center pt-0 mt-0 py-3 ">TODAY WEATHER</h2>
+            <div class="header d-flex justify-content-around bg-dark text-center rounded w-100">
+
+              <!-- today name -->
+              <div id="now" class="fw-bolder fs-3"> friday</div>
+
+              <!-- today date -->
+              <div id="Now-Date" class="fw-bolder fs-3"> 20 Oct</div>
+
+            </div>
+
+            <div class="weather-content  ">
+
+              <!-- location  -->
+              <div class="location fs-2 fw-bolder" id="location"> Alex</div>
+              <div class="degree d-flex justify-content-between">
+
+                <!-- degree --  -->
+                <div class="num fs-3 text-dark fw-bolder" id="degree">
+                  <span id="num">
+
+                  </span>
+                  <span><sup>o</sup>C</span>
+                </div>
+
+                <div class="weather-icon d-inline-block my-4" id="Icon">
+
+                  <!-- today icon-- -->
+                  <i class="fa-solid fa-cloud-moon d-inline-block fs-1" width="80"></i>
+
+                </div>
+
+              </div>
+
+              <!-- status  -->
+              <div class="weather-status fs-5 fw-bold" id="desc">
+                <p>cloudy</p>
+              </div>
+              <div class="icons d-flex justify-content-around align-items-center fs-3 text-dark">
+                <span><span id="humedityt">
+                    0
+                  </span>%
+                  <i class="fa-solid fa-umbrella"></i></span>
+                <span> <span id="distance">
+                    15.1km/h
+                  </span>
+                  <i class="fa-solid fa-wind"></i></span>
+
+                <span id="compass">
+                  <i class="fa-regular fa-compass"></i>
+                  North West
+
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ------------------------next day---------------------------- -->
+    
+
+        <div class="col-lg-4 col-md-12 ">
+
+          <div class="content bg-gradient shadow p-5 rounded-3">
+            <h2 class="text-center pt-0 mt-0 py-3 ">NEXTDAY</h2>
+
+            <div class="header d-flex justify-content-around bg-dark text-center rounded w-100">
+
+              <!-- previous name -->
+              <div id="now" class="now fw-bolder fs-3"> friday</div>
+
+            </div>
+
+            <div class="weather-content text-center">
+
+              <!-- location  -->
+              <div class="temp-datails">
+                <div>
+                  <img class="NextIcon" id="NextIcon" width="90"/>
+                </div>
+                <h2 class="max-degree d-inline-block" id="max-degree"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="min-degree d-inline-block" id="min-degree"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-desc"></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+ 
+
+
+
+
+        <div class="col-lg-4 col-md-12 my-2">
+
+          <div class="content bg-gradient shadow p-5 rounded-3">
+            <h2 class="text-center pt-0 mt-0 py-3 ">NEXTDAY</h2>
+
+            <div class="header d-flex justify-content-around bg-dark text-center rounded w-100">
+
+              <!-- previous name -->
+              <div id="now" class="now fw-bolder fs-3"> friday</div>
+
+            </div>
+
+            <div class="weather-content text-center">
+
+              <!-- location  -->
+              <div class="temp-datails">
+                <div>
+                  <img class="NextIcon" id="NextIcon" width="90"/>
+                </div>
+                <h2 class="max-degree d-inline-block" id="max-degree"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="min-degree d-inline-block" id="min-degree"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-desc"></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+              
+
+
+
+      </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>
+
+
+<!-- <div class="col-lg-5 col-md-12  city1 d-flex">
+              <div class="card text-bg-dark border-0 shadow">
+                
+                <div class="card-img-overlay">
+                  <div class="header d-flex justify-content-around bg-dark rounded w-100">
+    
+                 
+                    <div id="NextDay" class="NextDay fw-bolder"> friday</div>
+    
+                    
+              
+    
+                  </div>
+                  <div class="weather-content text-center">
+    
+                  
+                    <div class="temp-datails">
+                      <div>
+                        <img class="NextIcon" id="NextIcon" width="90"/>
+                      </div>
+                      <h2 class="max-degree d-inline-block" id="max-degree"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                      <br>
+                      <p class="min-degree d-inline-block" id="min-degree"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                      <p class="nextDay-desc"></p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div> 
+    
+            </div> -->
