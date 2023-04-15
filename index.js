@@ -33,7 +33,7 @@ searchBar.addEventListener("keyup", function () {
 })
 
 async function getWeatherApi(City = 'alex') {
-    myHTTP = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=078f431efd6d476596a14946222211&q=${City}&days=30`);
+    myHTTP = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=d5f4dd53775645ae830130700232203&q=${City}&days=30`);
     // http://api.weatherapi.com/v1/search.json?key=<YOUR_API_KEY>&q=lond
     // http://api.weatherapi.com/v1/forecast.json?key=<YOUR_API_KEY>&q=${City}&days=7
     apiRsponse = await myHTTP.json()
